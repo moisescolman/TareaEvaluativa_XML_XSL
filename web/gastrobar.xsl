@@ -12,34 +12,34 @@
     <xsl:output method="html" doctype-system="about:legacy-compat" />
     
     <xsl:template match="/gestionParque">
-        <html lang="es">
-            <head>
-                <link href="../css/estilo.css" rel="stylesheet" type="text/css" />
-                <meta name="description" content="Página principal" />
-                <title>Gastrobar</title>
-            </head>
+   <html lang="es">
 
-            <body>
-                <header>
-                    <img src="../img/logotipo.png" alt="Reservas" />
-                    <a href="gastrobar.xml">Gastrobar</a>
-                    <a href="atracciones.xml">Atracciones</a>
-                    <a href="eventos.xml">Eventos</a>
-                </header>
-                
-                <main id="gastrobar">
-                    <h1>ENTRANTES</h1>
+	<head>
+		<link href="../css/estilo.css" rel="stylesheet" type="text/css" />
+		<meta charset="utf-8"/>
+		<meta name="description" content="Página principal" />
+		<title>titulo de la web</title>
+	</head>
 
-                    <!-- llama la plantilla de platos -->
-                    <xsl:apply-templates select="gastrobar/platos/plato"/>
-                    
-                </main>
+	<body>
+		<header>
+			<img src= "../img/logotipo.png" alt= "Reservas" />
+			<a href="gastrobar.html">Gastrobar</a>
+			<a href="atracciones.html">Atracciones</a>
+			<a href="eventos.html">Eventos</a>
+		</header>
+		
+		<main id="gastrobar">
+			<h1>ENTRANTES</h1>
+                <!-- llama la plantilla de platos -->
+                <xsl:apply-templates select="gastrobar/platos/plato"/>
+		</main>
 
-                <footer>
-                    <address>&#169; Desarrollado por info@birt.eus</address>
-                </footer>
-            </body>
-        </html>
+		<footer>
+			<address>&#169; Desarrollado por info@birt.eus</address>
+		</footer>
+	</body>
+</html>
     </xsl:template>
 
     <!-- Plantilla para cada plato -->
