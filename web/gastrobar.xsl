@@ -16,17 +16,16 @@
 			
 			<head>
 				<link href="../css/estilo.css" rel="stylesheet" type="text/css" />
-				<meta charset="utf-8"/>
 				<meta name="description" content="Página principal" />
-				<title>titulo de la web</title>
+				<title>Gastrobar</title>
 			</head>
 			
 			<body>
 				<header>
 					<img src= "../img/logotipo.png" alt= "Reservas" />
-					<a href="gastrobar.html">Gastrobar</a>
-					<a href="atracciones.html">Atracciones</a>
-					<a href="eventos.html">Eventos</a>
+					<a href="gastrobar.xml">Gastrobar</a>
+					<a href="atracciones.xml">Atracciones</a>
+					<a href="eventos.xml">Eventos</a>
 				</header>
 				
 				<main id="gastrobar">
