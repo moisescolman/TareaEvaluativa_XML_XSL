@@ -7,7 +7,7 @@
 * Tarea:LMSGI04 Tarea evaluativa 2. XSLT. (60%)
 * Autoevaluación: Dentro del fichero .zip
 * Descripción: Sitio web obteniendo los datos visualizados de un documento XML utilizando el lenguaje XPath y el estandar XSLT.
- -->
+-->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
     <xsl:output method="html" doctype-system="about:legacy-compat" />
     
@@ -52,10 +52,10 @@
     
     <!-- plantilla para atraccion -->
     <xsl:template match="atraccion" >
-
-    <!-- variable para el nombre transformado de la atraccion -->
-    <!-- para cambiar el enlace en el href -->
-    <xsl:variable name="nombre" select="translate(nombre,' ', '_')"/>
+        
+        <!-- variable para el nombre transformado de la atraccion -->
+        <!-- para cambiar el enlace en el href -->
+        <xsl:variable name="nombre" select="translate(nombre,' ', '_')"/>
         <tr>
             <td><a href="https://es.wikipedia.org/wiki/{$nombre}" target="_blank"><xsl:value-of select="nombre"/></a></td>
             <td><xsl:value-of select="restricciones/edadMinima"/></td>
